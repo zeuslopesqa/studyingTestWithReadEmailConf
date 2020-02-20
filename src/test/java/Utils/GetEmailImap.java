@@ -18,7 +18,7 @@ public class GetEmailImap {
             Session session = Session.getDefaultInstance(props, null);
 
             Store storeEmail = session.getStore("imaps");
-            storeEmail.connect("imap-mail.outlook.com", "zeuslopesqa@hotmail.com","zeus17031991");
+            storeEmail.connect("imap-mail.outlook.com", "","");
             session.setDebug(true);
 
             Folder inbox = storeEmail.getFolder("inbox");
